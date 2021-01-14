@@ -2,9 +2,6 @@
     "name": "Chrome Extension Starter",
     "version": "1.0",
     "description": "Chrome extension starter!",
-    "permissions": [
-          "https://veriphone.p.rapidapi.com/verify"
-     ],
     "chrome_url_overrides": {
         "newtab": "index.html"
        },
