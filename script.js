@@ -1,4 +1,3 @@
-
 const pageBody = document.body;
 const ready = (callback) => {
   if (document.readyState != "loading") callback();
