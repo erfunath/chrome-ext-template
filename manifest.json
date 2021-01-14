@@ -1,0 +1,28 @@
+{
+    "name": "Chrome Extension Starter",
+    "version": "1.0",
+    "description": "Chrome extension starter!",
+    "permissions": [
+          "https://veriphone.p.rapidapi.com/verify"
+     ],
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+       },
+       "action": {
+            "default_icon": {
+            "16": "images/icon16.png",
+            "32": "images/icon32.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+            },
+            "default_title": "Random Image",
+            "default_popup": "popup.html"
+       },
+       "icons": {
+            "16": "images/icon16.png",
+            "32": "images/icon32.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+       },
+    "manifest_version": 3
+}
