@@ -6,31 +6,31 @@ const ready = (callback) => {
 
 // TODO: Add images dynamically from extension settings
 const setRandomImage = () => {
-  const IMG_URL = "https://thailand-exp-images.s3-us-west-2.amazonaws.com/";
+  const IMG_URL = "https://res.cloudinary.com/adotsoftwaresolution/image/upload/v1610969041/kwara-culture-art/";
   const backgroundImages = [
-    "riceLady.jpg",
-    "raileyBeach.jpg",
-    "monksTemple.jpg",
-    "monkeys.jpg",
-    "manChang.jpg",
-    "maeYai.jpg",
-    "girlsWater.jpg",
-    "girlChang.jpg",
-    "floatingMarket.jpg",
-    "buddha.jpg",
-    "boyBudah.jpg",
-    "ancient.jpg",
-    "thaiBackground.jpg",
-    "Yipeng.jpg",
-    "islands.jpg",
-    "Loy_Krathong.jpg",
-    "thaiBudah.jpg",
-    "komloy.jpg",
+    { title: '1', caption: '' },
+    { title: '2', caption: '' },
+    { title: '3', caption: '' },
+    { title: '4', caption: '' },
+    { title: '5', caption: '' },
+    { title: '6', caption: '' },
+    { title: '7', caption: '' },
+    { title: '8', caption: '' },
+    { title: '9', caption: '' },
+    { title: '10', caption: '' },
+    { title: '11', caption: '' },
+    { title: '12', caption: '' },
+    { title: '13', caption: '' },
+    { title: '14', caption: '' },
+    { title: '15', caption: '' },
+    { title: '16', caption: '' },
+    { title: '17', caption: '' },
   ];
 
+  const count = Math.random() * backgroundImages.length
   const randomImage =
-    backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
-  pageBody.style.backgroundImage = `url(${IMG_URL}${randomImage})`;
+    backgroundImages[Math.floor(count)].title;
+  pageBody.style.backgroundImage = `url(${IMG_URL}${randomImage}.jpeg)`;
 };
 
 ready(() => {
